@@ -8,6 +8,16 @@ This repo is designed to be used alongside the [Drupal 8 Docker development envi
 To use this site, clone this repo into the `dev` directory in the Drupal 8 Docker development environment repo.
 
 1. Clone this repo into the `dev` directory in the Drupal 8 Docker development environment repo.
+  ```bash
+  # Navigate to your drupal-8-docker-dev repo copy.
+  $ cd /path/to/drupal-8-docker-dev
+
+  # Remove the .gitkeep file from dev so we can clone directly into dev.
+  $ rm ./dev/.gitkeep
+
+  # Clone into ./dev.
+  $ git clone https://github.com/OULibraries/drupal-8-umami-example.git ./dev
+  ```
 2. Set ownership of the `dev` directory to `www-data` (UID: 33).
    ```bash
    $ chown -R 33:33 ./dev
