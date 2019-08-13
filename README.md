@@ -18,7 +18,9 @@ To use this site, clone this repo into the `dev` directory in the Drupal 8 Docke
   # Clone into ./dev.
   $ git clone https://github.com/OULibraries/drupal-8-umami-example.git ./dev
   ```
-2. Set ownership of the `dev` directory to `www-data` (UID: 33).
+2. Set ownership of the `dev` directory to `www-data` (UID: 33). You should only
+   need to do this if you are deploying the site on a Linux host. Docker Desktop
+   for Mac and Windows handles the permissions for you.
    ```bash
    $ chown -R 33:33 ./dev
    ```
